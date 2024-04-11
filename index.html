@@ -6,26 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversão de Moedas</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
     <div class="container">
-    <h1 id="titulo">Conversão de Moedas</h1>
-    <input type="text" id="valorUsuario">
-    <select name="moeda1" id="moeda1">
-        <option value="real">Real</option>
-        <option value="dolar">Dólar</option>
-        <option value="euro">Euro</option>
-    </select>
-    <button>Inverter</button>
-    <select name="moeda2" id="moeda2">
-        <option value="real">Real</option>
-        <option value="dolar">Dólar</option>
-        <option value="euro">Euro</option>
-    </select>
-    <button onclick="converter()">Converter</button>
-    <p id="resultado">Resultado</p>
+        <h1 id="titulo">Conversão de Moedas</h1>
+        <input type="number" id="valor-usuario" placeholder="Digite um valor">
+        <select name="moeda1" id="moeda1">
+            <option value="real">Real</option>
+            <option value="dolar">Dólar</option>
+            <option value="euro">Euro</option>
+        </select>
+        <button id="inverter" onclick="inverter();">Inverter</button>
+        <select name="moeda2" id="moeda2">
+            <option value="real">Real</option>
+            <option value="dolar" selected>Dólar</option>
+            <option value="euro">Euro</option>
+        </select>
+        <!-- <button onclick="limpar();">Limpar</button> -->
+        <button id="converter" onclick="converter();">Converter</button>
+        <button id="limparButton" onclick="limpar();">Limpar</button>
+        
+        <p id="resultado">Resultado</p>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

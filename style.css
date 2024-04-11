@@ -1,12 +1,32 @@
-input, select, button{
+input, select{
     padding: 12px;
+    /* justify-content: space-between; */
+}
+
+/* button{
+    padding: 12px;
+    background-color: #0099ff;
+    border: none;
+} */
+
+#inverter, #converter{
+    padding: 12px;
+    background-color: #0099ff;
+    border: none;
+}
+
+button{
+    padding: 12px;
+    background-color: #0099ff;
+    border: none;
 }
 
 .container {
-    border: 1px solid #aaa;
+    border: 2px solid #0000ff;
     padding: 50px;
     text-align: center;
     margin-top: 50px;
+    
 }
 
 #titulo {
@@ -15,4 +35,10 @@ input, select, button{
 
 #resultado {
     margin-top: 50px;
+}
+
+#limparButton{
+    padding: 12px;
+    background-color: #f89008;
+    border: none;
 }
